@@ -10,8 +10,8 @@ This project was created by and is maintained by:
 * **Pablo Salgado**
 * **??**
 
-Gruop 301122_58, UNAD, 2017
-At UNAD (Universidad Nacional Abierta y a Distancia)
+Group 301122_58, At UNAD (Universidad Nacional Abierta y a Distancia)
+2017
 
 ## Copyright and License
 
