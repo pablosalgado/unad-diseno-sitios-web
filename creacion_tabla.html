@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Creación de tablas</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a href="#" class="navbar-left"><img src="img/logoUNAD.png" style="height: 50px;"/></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="lecturas.html">Lecturas</a>
+                    </li>
+                    <li>
+                        <a href="videos.html">Videos</a>
+                    </li>
+                    <li>
+                        <a href="ejercicios.html">Ejercicios</a>
+                    </li>
+                    <li>
+                        <a href="autores.html">Autores</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row" style="background-color: #FFFFFF">
+          <img class="img-responsive" src="img/banner-sql-code.png" style="max-height: 100px; margin: auto;" alt=""/>
+        </div>
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Creación de tablas en MySQL
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Lecturas -->
+        <div class="row">
+          <div class="col-lg-12">
+              <p>
+                En este ejercicio se propone la creación de 3 tablas para un
+                modelo de datos que captura información de los profesores de un
+                colegio.
+              </p>
+              <p>
+                La información que se desea guardar del profesor es la siguiente:
+              </p>
+              <ul>
+                <li>Primer nombre</li>
+                <li>Segundo nombre</li>
+                <li>Primer apellido</li>
+                <li>Segundo apellido</li>
+                <li>Número de documento de identidad</li>
+                <li>Género</li>
+              </ul>
+              <p>
+                A tal fin, se proponen tres tablas:
+              </p>
+              <ul>
+                <li>PROFESOR</li>
+                <li>GENERO</li>
+                <li>TIPO_DOCUMENTO_IDENTIDAD</li>
+              </ul>
+              <p>
+                La tabla para profesores se crea con las siguientes instrucciones
+                DDL:
+              </p>
+              <div style="border: 1px solid lightgrey">
+                <font face="Courier New" size="2">
+                  <font color = "blue">CREATE</font>&nbsp;<font color = "blue">TABLE</font>&nbsp;<font color = "maroon">`PROFESOR`</font>
+                  <br/>&nbsp;&nbsp;<font color = "maroon">(</font>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">`ID`</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "black"><i>BIGINT</i></font>&nbsp;<font color = "blue">NOT</font>&nbsp;<font color = "blue">NULL</font>&nbsp;<font color = "maroon">AUTO_INCREMENT</font><font color = "silver">,</font>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">`TIPO_DOCUMENTO_IDENTIDAD_ID`</font>&nbsp;<font color = "black"><i>BIGINT</i></font>&nbsp;<font color = "blue">NOT</font>&nbsp;<font color = "blue">NULL</font><font color = "silver">,</font>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">`GENERO_ID`</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "black"><i>BIGINT</i></font>&nbsp;<font color = "blue">NOT</font>&nbsp;<font color = "blue">NULL</font><font color = "silver">,</font>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">`NOMBRE_1`</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "black"><i>VARCHAR</i></font><font color = "maroon">(</font><font color = "black">45</font><font color = "maroon">)</font>&nbsp;<font color = "blue">NOT</font>&nbsp;<font color = "blue">NULL</font><font color = "silver">,</font>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">`NOMBRE_2`</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "black"><i>VARCHAR</i></font><font color = "maroon">(</font><font color = "black">45</font><font color = "maroon">)</font>&nbsp;<font color = "blue">NULL</font><font color = "silver">,</font>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">`APELLIDO_1`</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "black"><i>VARCHAR</i></font><font color = "maroon">(</font><font color = "black">45</font><font color = "maroon">)</font>&nbsp;<font color = "blue">NOT</font>&nbsp;<font color = "blue">NULL</font><font color = "silver">,</font>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">`APELLIDO_2`</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "black"><i>VARCHAR</i></font><font color = "maroon">(</font><font color = "black">45</font><font color = "maroon">)</font>&nbsp;<font color = "blue">NULL</font><font color = "silver">,</font>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">`NUMERO_DOCUMENTO_IDENTIDAD`</font>&nbsp;&nbsp;<font color = "black"><i>VARCHAR</i></font><font color = "maroon">(</font><font color = "black">45</font><font color = "maroon">)</font>&nbsp;<font color = "blue">NULL</font><font color = "silver"></font>
+                  <br/>&nbsp;&nbsp;<font color = "maroon">)</font>
+                  <br/><font color = "maroon">ENGINE</font>&nbsp;<font color = "silver">=</font>&nbsp;<font color = "maroon">InnoDB</font><font color = "silver">;</font>&nbsp;
+                </font>
+              </div>
+              <br>
+              <p>
+                La tabla de tipos de documento se crea con las siguientes instrucciones
+                DDL:
+              </p>
+              <div style="border: 1px solid lightgrey">
+                <font face="Courier New" size="2">
+                  <font color = "blue">CREATE</font>&nbsp;<font color = "blue">TABLE</font>&nbsp;<font color = "maroon">`TIPO_DOCUMENTO_IDENTIDAD`</font>
+                  <br/>&nbsp;&nbsp;<font color = "maroon">(</font>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">`ID`</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "black"><i>BIGINT</i></font>&nbsp;<font color = "blue">NOT</font>&nbsp;<font color = "blue">NULL</font><font color = "silver">,</font>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color = "maroon">`NOMBRE`</font>&nbsp;<font color = "black"><i>VARCHAR</i></font><font color = "maroon">(</font><font color = "black">45</font><font color = "maroon">)</font>&nbsp;<font color = "blue">NOT</font>&nbsp;<font color = "blue">NULL</font>
+                  <br/>&nbsp;&nbsp;<font color = "maroon">)</font>
+                  <br/><font color = "maroon">ENGINE</font>&nbsp;<font color = "silver">=</font>&nbsp;<font color = "maroon">InnoDB</font><font color = "silver">;</font>&nbsp;
+                </font>
+              </div>
+              <br>
+              <p>
+                Se deja como ejercicio al lector, crear la tabla de géneros.
+              </p>
+          </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p><a href="autores.html" >Grupo 301122_58</a>, UNAD, 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+    </div>
+</body>
+</html>
