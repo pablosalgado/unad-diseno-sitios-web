@@ -85,22 +85,226 @@
 
         <!-- Lecturas -->
         <div class="row">
-            <p>
-              De acuerdo a Escofet (s.f.), la definición de lengueja SQL es:
-            </p>
-            <p style="padding-left: 40px;">
-              El SQL es el lenguaje estándar ANSI/ISO de definición, manipulación
-              y control de bases de datos relacionales. Es un lenguaje declarativo:
-              sólo hay que indicar qué se quiere hacer. En cambio, en los lenguajes
-              procedimentales es necesario especificar cómo hay que hacer cualquier
-              acción sobre la base de datos. El SQL es un lenguaje muy parecido
-              al lenguaje natural; concretamente, se parece al inglés, y es muy
-              expresivo. Por estas razones, y como lenguaje estándar, el SQL es
-              un lenguaje con el que se puede acceder a todos los sistemas
-              relacionales comerciales. (p.5)
-            </p>
-            <p>
-            </p>
+          <p>
+            De acuerdo a Escofet (s.f.), la definición de lengueja SQL es:
+          </p>
+          <p style="padding-left: 40px;">
+            El SQL es el lenguaje estándar ANSI/ISO de definición, manipulación
+            y control de bases de datos relacionales. Es un lenguaje declarativo:
+            sólo hay que indicar qué se quiere hacer. En cambio, en los lenguajes
+            procedimentales es necesario especificar cómo hay que hacer cualquier
+            acción sobre la base de datos. El SQL es un lenguaje muy parecido
+            al lenguaje natural; concretamente, se parece al inglés, y es muy
+            expresivo. Por estas razones, y como lenguaje estándar, el SQL es
+            un lenguaje con el que se puede acceder a todos los sistemas
+            relacionales comerciales. (p.5)
+          </p>
+          <p>
+            El lenguaje de consulta estructurado (SQL) es un lenguaje de base
+            de datos normalizado, utilizado por el motor de base de datos de
+            Microsoft Jet. SQL se utiliza para crear objetos QueryDef, como el
+            argumento de origen del método OpenRecordSet y como la propiedad
+            RecordSource del control de datos. También se puede utilizar con
+            el método Execute para crear y manipular directamente las bases de
+            datos Jet y crear consultas SQL de paso a través para manipular
+            bases de datos remotas cliente – servidor.
+          </p>
+          <h3>1.1 Componentes del SQL</h3>
+          <p>
+            El lenguaje SQL está compuesto por comandos, cláusulas, operadores
+            y funciones de agregado. Estos elementos se combinan en las
+            instrucciones para crear, actualizar y manipular las bases de datos.
+          </p>
+          <h3>1.2 Comandos</h3>
+          <p>
+            Existen dos tipos de comandos SQL:
+          </p>
+          <p>Los DLL que permiten crear y definir nuevas bases de datos, campos
+             e índices. Los DML que permiten generar consultas para ordenar,
+             filtrar y extraer datos de la base de datos.
+          </p>
+          <br>
+          <h3>Comandos DLL</h3>
+          <table class="table">
+          <tr>
+            <td>Comando</td>
+            <td>Descripción</td>
+          </tr>
+          <tr>
+            <td>CREATE</td>
+            <td>Utilizado para crear nuevas tablas, campos e índices</td>
+          </tr>
+          <tr>
+            <td>DROP</td>
+            <td>Empleado para eliminar tablas e índices</td>
+          </tr>
+          <tr>
+            <td>ALTER</td>
+            <td>
+              Utilizado para modificar las tablas agregando campos o cambiando
+              la definición de los campos.
+            </td>
+          </tr>
+          </table>
+          <br>
+          <h3>Comandos DML</h3>
+          <table class="table">
+          <tr>
+            <td>Comando</td>
+            <td>Descripción</td>
+          </tr>
+          <tr>
+            <td>SELECT</td>
+            <td>
+              Utilizado para consultar registros de la base de datos que
+              satisfagan un criterio determinado
+            </td>
+          </tr>
+          <tr>
+            <td>INSERT</td>
+            <td>
+            Utilizado para cargar lotes de datos en la base de datos en una
+            única operación.
+          </td>
+          </tr>
+          <tr>
+            <td>UPDATE</td>
+            <td>
+              Utilizado para modificar los valores de los campos y registros
+              especificados
+            </td>
+          </tr>
+          <tr>
+            <td>DELETE</td>
+            <td>
+              Utilizado para eliminar registros de una tabla de una base de
+              datos
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+          </table>
+          <br>
+          <h3>1.4 Operadores Lógicos</h3>
+          <p>
+          </p>
+          <table class="table">
+          <tr>
+            <td>Operador</td>
+            <td>Uso</td>
+          </tr>
+          <tr>
+            <td>AND</td>
+            <td>
+              Es el “y” lógico. Evalúa dos condiciones y devuelve un valor
+              de verdad sólo si ambas son ciertas.
+            </td>
+          </tr>
+          <tr>
+            <td>OR</td>
+            <td>
+              Es el “o” lógico. Evalúa dos condiciones y devuelve un valor de
+              verdad si alguna de las dos es cierta.
+            </td>
+          </tr>
+          <tr>
+            <td>NOT</td>
+            <td>Negación lógica. Devuelve el valor contrario de la expresión.</td>
+          </tr>
+          </table>
+          <br>
+          <h3>1.5 Operadores de Comparación</h3>
+          <p>
+          </p>
+          <table class="table">
+           <tr>
+             <td>Operador</td>
+             <td>Uso</td>
+           </tr>
+          <tr>
+            <td>&lt;</td>
+            <td>Menor que</td>
+          </tr>
+          <tr>
+            <td>&gt;</td>
+            <td>Mayor que</td>
+          </tr>
+          <tr>
+            <td>&lt;&gt;</td>
+            <td>Distinto de</td>
+          </tr>
+          <tr>
+            <td>&lt;=</td>
+            <td>Menor ó Igual que</td>
+          </tr>
+          <tr>
+            <td>&gt;=</td>
+            <td>Mayor ó Igual que</td>
+          </tr>
+          <tr>
+            <td>BETWEEN</td>
+            <td>
+              Utilizado para especificar un intervalo de valores.
+            </td>
+          </tr>
+          <tr>
+            <td>LIKE</td>
+            <td>Utilizado en la comparación de un modelo.</td>
+          </tr>
+          <tr>
+            <td>IN</td>
+            <td>Utilizado para especificar registros de una base de datos.</td>
+          </tr>
+          </table>
+          <br>
+          <h3>1.6 Funciones de Agregado</h3>
+          <p>
+           Las funciones de agregado se usan dentro de una cláusula SELECT
+           en grupos de registros para devolver un único valor que se aplica
+           a un grupo de registros.
+          </p>
+          <table class="table">
+          <tr>
+            <td>Comando</td>
+            <td>Descripción</td>
+          </tr>
+          <tr>
+            <td>AVG</td>
+            <td>
+              Utilizada para calcular el promedio de los valores de un campo
+              determinado.
+            </td>
+          </tr>
+          <tr>
+            <td>COUNT</td>
+            <td>
+              Utilizada para devolver el número de registros de la selección.
+            </td>
+          </tr>
+          <tr>
+            <td>SUM</td>
+            <td>
+              Utilizada para devolver la suma de todos los valores de un
+              campo determinado.
+            </td>
+          </tr>
+          <tr>
+            <td>MAX</td>
+            <td>
+              Utilizada para devolver el valor más alto de un campo
+              especificado.
+            </td>
+          </tr>
+          <tr>
+            <td>MIN</td>
+            <td>
+              Utilizada para devolver el valor más bajo de un campo
+              especificado
+            </td>
+          </tr>
+          </table>
         </div>
         <!-- /.row -->
 
