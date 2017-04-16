@@ -3,23 +3,23 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>DML - Data Manipulation Language</title>
+  <title>DML - Data Manipulation Language</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/stylesheet.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/stylesheet.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -28,98 +28,139 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a href="#" class="navbar-left"><img src="img/logoUNAD.png" style="height: 50px;"/></a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a href="#" class="navbar-left"><img src="img/logoUNAD.png" style="height: 50px;" /></a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="lecturas.html">Lecturas</a>
-                    </li>
-                    <li>
-                        <a href="videos.html">Videos</a>
-                    </li>
-                    <li>
-                        <a href="ejercicios.html">Ejercicios</a>
-                    </li>
-                    <li>
-                        <a href="autores.html">Autores</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+        <a class="navbar-brand" href="#"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="lecturas.html">Lecturas</a>
+          </li>
+          <li>
+            <a href="videos.html">Videos</a>
+          </li>
+          <li>
+            <a href="ejercicios.html">Ejercicios</a>
+          </li>
+          <li>
+            <a href="autores.html">Autores</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
 
-    <!-- Page Content -->
-    <div class="container">
+  <!-- Page Content -->
+  <div class="container">
 
-        <div class="row" style="background-color: #76aada">
-          <img class="img-responsive" src="img/banner-dml.svg" style="max-height: 100px; margin: auto; width: 100%;" alt=""/>
-        </div>
+    <div class="row" style="background-color: #76aada">
+      <img class="img-responsive" src="img/banner-dml.svg" style="max-height: 100px; margin: auto; width: 100%;" alt="" />
+    </div>
 
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">DML - Data Manipulation Language
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
+    <!-- Page Heading -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">DML - Data Manipulation Language
+        </h1>
+      </div>
+    </div>
+    <!-- /.row -->
 
-        <!-- Lecturas -->
-        <div class="row">
-            <p>
-              García (2003), define el lenguaje de manipulación de datos como:
-            </p>
-            <p style="padding-left: 40px;">
-              Grupo de sentencias del SQL para manipular los datos que están
-              almacenados en las bases de datos, a nivel de filas (tuplas) y/o
-              columnas (atributos). Ya sea que se requiera que los datos sean
-              modificados, eliminados, consultados o que se agregaren nuevas
-              filas a las tablas de las base de datos. INSERT, UPDATE, DELETE y
-              SELECT. (p.4)
-            </p>
-            <p>
-            </p>
-        </div>
-        <!-- /.row -->
+    <!-- Lecturas -->
+    <div class="row">
+      <p>
+        García (2003), define el lenguaje de manipulación de datos como:
+      </p>
+      <p style="padding-left: 40px;">
+        Grupo de sentencias del SQL para manipular los datos que están almacenados en las bases de datos, a nivel de filas (tuplas) y/o columnas (atributos). Ya sea que se requiera que los datos sean modificados, eliminados, consultados o que se agregaren nuevas
+        filas a las tablas de las base de datos. INSERT, UPDATE, DELETE y SELECT. (p.4)
+      </p>
+      <p><span>Lenguaje de Manipulaci&oacute;n de Datos (Data Manipulation Language, DML) es un idioma proporcionado por los sistemas gestores de bases de datos que permite a los usuarios de la misma llevar a cabo las tareas de consulta o modificaci&oacute;n de los datos contenidos en las Bases de Datos del Sistema Gestor de Bases de Datos. El lenguaje de manipulaci&oacute;n de datos m&aacute;s popular hoy d&iacute;a es SQL, usado para recuperar y manipular datos en una base de datos relacional. Otros ejemplos de DML son los usados por bases de datos IMS/DL1, CODASYL u otras.</span></p>
+      <h2><span>Elementos del lenguaje de manipulaci&oacute;n de datos</span></h2>
+      <p><span>Select, Insert, Delete y Update</span></p>
+      <h2><span>Clasificaci&oacute;n de los DML</span></h2>
+      <p><span>Se clasifican en dos grandes grupos:</span></p>
+      <ul>
+        <li><span>lenguajes de consulta procedimentales</span></li>
+      </ul>
+      <p><span>Lenguajes procedimentales. En este tipo de lenguaje el usuario da instrucciones al sistema para que realice una serie de procedimientos u operaciones en la base de datos para calcular un resultado final.</span></p>
+      <ul>
+        <li><span>lenguajes de consulta no procedimentales</span></li>
+      </ul>
+      <p><span>En los lenguajes no procedimentales el usuario describe la informaci&oacute;n deseada sin un procedimiento espec&iacute;fico para obtener esa informaci&oacute;n.</span></p>
+      <p><span>&nbsp;</span></p>
+      <h3><span>Lenguaje de manipulaci&oacute;n de datos (DML)</span></h3>
+      <p><span>Un lenguaje de manipulaci&oacute;n de datos (Data Manipulation Language, o DML en ingl&eacute;s) es un lenguaje proporcionado por el sistema de gesti&oacute;n de base de datos que permite a los usuarios llevar a cabo las tareas de consulta o manipulaci&oacute;n de los datos, organizados por el modelo de datos adecuado.</span></p>
 
-        <div class="row">
-          <h3>Trabajos citados</h3>
-          <span>
+      <p><span>El lenguaje de manipulaci&oacute;n de datos m&aacute;s popular hoy d&iacute;a es SQL, usado para recuperar y manipular datos en una base de datos relacional. Otros ejemplos de DML son los usados por bases de datos IMS/DL1, CODASYL u otras.</span></p>
+
+
+      <p><span>1- INSERT</span></p>
+
+      <p><span>Una sentencia INSERT de SQL agrega uno o m&aacute;s registros a una (y s&oacute;lo una) tabla en una base de datos relacional.</span></p>
+
+
+      <p><span>Ejemplo 1 (inserto valores alumno pepe en la materia spd2 a la tabla cursada):</span></p>
+
+      <p><span>INSERT INTO &#39;&#39;cursada&#39;&#39; (&#39;&#39;alumno&#39;&#39;, &#39;&#39;materia&#39;&#39;) VALUES (&#39;&#39;pepe&#39;&#39;, &#39;&#39;spd2&#39;&#39;)</span></p>
+
+
+      <p><span>2- UPDATE</span></p>
+
+      <p><span>Una sentencia UPDATE de SQL es utilizada para modificar los valores de un conjunto de registros existentes en una tabla.</span></p>
+
+      <p><span>Ejemplo 1 (modifico la materia donde &nbsp;el alumno sea pepe):</span></p>
+
+      <p><span>UPDATE &#39;&#39;cursada&#39;&#39; SET &#39;&#39;materia&#39;&#39;= &#39;&#39;spd3&#39;&#39; WHERE &#39;&#39;alumno&#39;&#39;= &#39;&#39;pepe&#39;&#39;</span></p>
+
+
+      <p><span>3- DELETE</span></p>
+
+      <p><span>Una sentencia DELETE de SQL borra uno o m&aacute;s registros existentes en una tabla.</span></p>
+
+      <p><span>Ejemplo 1 (borro todos los valores de las columnas alumno y materia donde la materia sea spd2):</span></p>
+
+      <p><span>DELETE FROM &#39;&#39;cursada&#39;&#39; WHERE &#39;&#39;materia&#39;&#39;= &#39;&#39;spd2&#39;&#39;</span></p>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <h3>Trabajos citados</h3>
+      <span>
             García, A. E. (24 de noviembre de 2003). Manual Práctico de SQL.
             Obtenido de lwp - La Web del Programador: http://www.lawebdelprogramador.com/cursos/archivos/ManualPracticoSQL.pdf
           </span>
-        </div>
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p><a href="autores.html" >Grupo 301122_58</a>, UNAD, 2017</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
     </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p><a href="autores.html">Grupo 301122_58</a>, UNAD, 2017</p>
+        </div>
+      </div>
+      <!-- /.row -->
+    </footer>
+  </div>
 </body>
+
 </html>
